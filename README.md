@@ -18,3 +18,6 @@
 
 `origin` はブランチ名とGitリモート名の両方に使われます。リモート上の `origin` ブランチは `origin/origin` と表示されます。
 
+## サーバー構成
+
+現行サイトとリニューアルサイトの切り替え計画は [docs/server-environment.md](docs/server-environment.md) を参照してください。
