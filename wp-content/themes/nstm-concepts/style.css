@@ -3,7 +3,7 @@ Theme Name: NSTM Concepts
 Theme URI: https://github.com/wiz-develop/kohler-nst
 Author: wiz-develop
 Description: 日鉄物産マテックス KOHLERサイトのデザイン検討用テーマ。
-Version: 0.3.2
+Version: 0.4.0
 Text Domain: nstm-concepts
 */
 
@@ -183,6 +183,7 @@ button { font: inherit; }
 .nstm-b-assurance__services { display: grid; grid-template-columns: repeat(4, 1fr); }
 .nstm-b-assurance__services article { min-height: 310px; padding: 28px 22px; border: 1px solid var(--line); border-right: 0; display: flex; flex-direction: column; text-align: center; }
 .nstm-b-assurance__services article:last-child { border-right: 1px solid var(--line); }
+.nstm-b-assurance__question { min-height: 36px; margin-bottom: 20px; display: block; color: #5d686c; font-size: 11px; line-height: 1.6; }
 .nstm-b-assurance__icon { width: 48px; height: 48px; margin: 0 auto 36px; display: grid; place-items: center; border: 1px solid var(--ink); border-radius: 50%; font: 400 18px/1 var(--serif); }
 .nstm-b-assurance__services h3 { margin: 0 0 20px; font: 600 15px/1.7 var(--serif); }
 .nstm-b-assurance__services p { margin: auto 0 0; font-size: 11px; line-height: 1.9; color: #687276; }
@@ -198,6 +199,29 @@ button { font: inherit; }
 .nstm-b-dual article div { padding: clamp(48px, 8vw, 120px); display: flex; flex-direction: column; justify-content: center; }
 .nstm-b-dual article h2 { margin: 0 0 22px; font: 400 clamp(36px, 4vw, 58px)/1.35 var(--serif); }
 .nstm-b-dual article p { margin: 0; max-width: 620px; font-size: 14px; line-height: 2.1; color: #4e595d; }
+
+.nstm-cases--a { color: var(--white); background: #0c1012; }
+.nstm-cases--a .nstm-section__number, .nstm-cases--a .nstm-section__intro { color: #aab3b6; }
+.nstm-cases__grid { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid #3b4245; border-left: 1px solid #3b4245; }
+.nstm-case-card { min-height: 220px; padding: 30px; border-right: 1px solid #3b4245; border-bottom: 1px solid #3b4245; display: grid; grid-template-columns: 42px 1fr; gap: 24px; align-content: space-between; }
+.nstm-case-card__index { color: #8b979a; font: 400 13px/1 var(--serif); }
+.nstm-case-card div > span { color: #9ca7aa; font-size: 11px; }
+.nstm-case-card h3 { margin: 12px 0 0; font: 400 clamp(24px, 2.4vw, 34px)/1.45 var(--serif); }
+.nstm-case-card__link { grid-column: 2; color: #d5dcde; font-size: 12px; }
+.nstm-cases--b { background: #eef1f1; }
+.nstm-cases__layout { display: grid; grid-template-columns: 1.25fr .75fr; min-height: 570px; background: var(--white); }
+.nstm-cases__feature { min-height: 570px; position: relative; padding: clamp(36px, 5vw, 70px); display: flex; align-items: end; color: var(--white); background: #172024 url("assets/images/project-hotel.webp") center/cover no-repeat; }
+.nstm-cases__feature::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.05), rgba(0,0,0,.82)); }
+.nstm-cases__feature > div { position: relative; z-index: 1; max-width: 520px; }
+.nstm-cases__feature > div > span { font-size: 12px; }
+.nstm-cases__feature h2 { margin: 14px 0 18px; font: 400 clamp(42px, 5vw, 68px)/1.25 var(--serif); }
+.nstm-cases__feature p { margin: 0 0 22px; font-size: 14px; line-height: 1.9; }
+.nstm-cases__feature small { font-size: 10px; opacity: .76; }
+.nstm-cases__list { border-top: 1px solid var(--line); }
+.nstm-case-row { min-height: 25%; padding: 26px 28px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 22px; }
+.nstm-case-row div > span { color: #657176; font-size: 10px; }
+.nstm-case-row h3 { margin: 8px 0 0; font: 400 19px/1.45 var(--serif); }
+.nstm-case-row > span { flex: 0 0 auto; color: #657176; font-size: 11px; }
 
 .nstm-gateways { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); }
 .nstm-gateway { min-height: 280px; padding: 36px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); display: flex; flex-direction: column; background: var(--white); }
@@ -257,6 +281,7 @@ button { font: inherit; }
 .nstm--b .nstm-stats__grid { border-color: #b6c0c2; }
 .nstm--b .nstm-stat { border-color: #b6c0c2; }
 .nstm--b .nstm-stat__label, .nstm--b .nstm-stat__unit, .nstm--b .nstm-provisional { color: #526064; }
+.nstm--b .nstm-a-evidence__title p { color: #526064; }
 .nstm--b .nstm-lab { min-height: 0; padding: clamp(72px, 8vw, 100px) 0; color: var(--ink); background: #eef1f1; }
 .nstm--b .nstm-lab::before { display: none; }
 .nstm--b .nstm-lab__inner { min-height: 560px; grid-template-columns: 1.12fr .88fr; background: var(--white); }
@@ -295,6 +320,8 @@ button { font: inherit; }
   .nstm-projects__layout { grid-template-columns: 1fr; }
   .nstm-project-list { display: grid; grid-template-columns: repeat(3, 1fr); }
   .nstm-project-card { min-height: 190px; }
+  .nstm-cases__layout { grid-template-columns: 1fr; }
+  .nstm-cases__list { display: grid; grid-template-columns: 1fr 1fr; }
   .nstm-a-concerns__grid, .nstm-a-evidence__photos { grid-template-columns: 1fr 1fr; }
   .nstm-process__grid { grid-template-columns: repeat(3, 1fr); }
   .nstm-a-dual { grid-template-columns: 1fr; }
@@ -360,6 +387,11 @@ button { font: inherit; }
   .nstm-b-assurance__icon { margin-bottom: 22px; }
   .nstm-b-dual article img { min-height: 310px; }
   .nstm-b-dual article div { padding: 54px 24px; }
+  .nstm-cases__grid, .nstm-cases__list { grid-template-columns: 1fr; }
+  .nstm-case-card { min-height: 200px; padding: 26px 22px; }
+  .nstm-cases__feature { min-height: 500px; padding: 34px 24px; }
+  .nstm-case-row { min-height: 150px; padding: 24px 20px; }
+  .nstm-case-row { align-items: flex-start; flex-direction: column; }
   .nstm-gateways { grid-template-columns: 1fr; }
   .nstm-gateway:first-child { border-left: 1px solid var(--line); }
   .nstm-group { grid-template-columns: 1fr; }

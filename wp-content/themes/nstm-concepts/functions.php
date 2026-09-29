@@ -33,7 +33,7 @@ function nstm_render_concept_page($variant = 'a') {
           <nav class="nstm-nav" id="nstm-nav" aria-label="メインナビゲーション">
             <a href="#promise">国内での対応</a>
             <a href="#lab">国内ラボ・通水検証</a>
-            <a href="#projects">プロジェクト対応</a>
+            <a href="#projects">納入実績</a>
             <a href="#company">会社情報</a>
             <a href="#contact">お問い合わせ</a>
             <a class="nstm-nav__switch" href="<?php echo esc_url($other_url); ?>"><?php echo esc_html($other_label); ?></a>
@@ -118,44 +118,42 @@ function nstm_render_concept_page($variant = 'a') {
             </div>
           </section>
 
-          <section class="nstm-section nstm-process nstm-process--a" id="flow">
-            <div class="nstm-container">
-              <div class="nstm-process__head"><div><span>納入までの流れ</span><h2>KOHLER製品が<span class="nstm-sp-break"></span>日本の現場に届くまで</h2></div><p>輸入した製品は、国内で開梱・検品し、確認した内容を記録してから出荷します。</p></div>
-              <div class="nstm-process__grid">
-                <?php
-                $process = array(
-                    array('01', '日本へ輸入', 'cargo-port.webp'),
-                    array('02', '受入・開梱', 'warehouse-inspection.webp'),
-                    array('03', '検品・通水確認', 'inspection-caliper.webp'),
-                    array('04', '記録・注意事項の確認', 'technical-drawing.webp'),
-                    array('05', '出荷', 'warehouse-inspection.webp'),
-                );
-                foreach ($process as $item) : ?>
-                  <article class="nstm-process-card"><div><span><?php echo esc_html($item[0]); ?></span><h3><?php echo esc_html($item[1]); ?></h3></div><img src="<?php echo esc_url($image_uri . '/' . $item[2]); ?>" alt=""></article>
-                <?php endforeach; ?>
-              </div>
-              <p class="nstm-image-note">※ 写真はイメージです。</p>
-            </div>
-          </section>
-
           <section class="nstm-a-dual" id="support">
             <article class="nstm-a-dual__panel nstm-a-dual__panel--quality">
               <div><span>正規輸入品への対応</span><h2>品質の約束</h2><p>国内で受入検品を行い、使用上の注意事項を記録します。保証、部品供給、修理のご相談にも対応します。</p></div>
             </article>
-            <article class="nstm-a-dual__panel nstm-a-dual__panel--project" id="projects">
+            <article class="nstm-a-dual__panel nstm-a-dual__panel--project">
               <div><span>ホテル・レジデンスなど</span><h2>プロジェクト<br>サポート</h2><p>ホテルやレジデンスなどの案件では、ご相談に応じて製品選定、価格・納期の調整、納まり検討、通水検証、施工支援が可能です。対応内容は案件ごとに調整します。</p></div>
             </article>
           </section>
         <?php else : ?>
           <section class="nstm-section nstm-b-assurance" id="promise">
             <div class="nstm-container nstm-b-assurance__layout">
-              <div class="nstm-b-assurance__statement"><span>日鉄物産マテックスの役割</span><h2>KOHLER製品を、<br>日本で安心して<br>使い続けるために。</h2><p>輸入・検品、設計・施工支援、保証・修理を一つの窓口で承ります。</p></div>
+              <div class="nstm-b-assurance__statement"><span>4つの不安と、4つの回答</span><h2>輸入品への不安に、<br>国内で対応します。</h2><p>検品、施工に関するご案内、保証・修理まで、日本で使い続けるために必要な窓口を設けています。</p></div>
               <div class="nstm-b-assurance__services">
-                <article><span class="nstm-b-assurance__icon">検</span><h3>正規輸入・<br>受入検品</h3><p>国内倉庫で製品を開梱し、外観や状態を確認してから出荷します。</p></article>
-                <article><span class="nstm-b-assurance__icon">設</span><h3>製品選定・<br>施工支援</h3><p>用途や納まりに合わせた製品選定と、施工方法のご相談に対応します。</p></article>
-                <article><span class="nstm-b-assurance__icon">修</span><h3>保証・修理・<br>部品供給</h3><p>正規輸入品には製品ごとの保証期間を設け、修理と部品購入も受け付けています。</p></article>
-                <article><span class="nstm-b-assurance__icon">網</span><h3>全国<br>メンテナンス</h3><p>39都道府県64社のサービスパートナーと連携し、全国でメンテナンスに対応しています。</p></article>
+                <article><span class="nstm-b-assurance__question">初期不良が心配</span><span class="nstm-b-assurance__icon">検</span><h3>国内で<br>受入検品</h3><p>国内倉庫で製品を開梱し、外観や状態を確認してから出荷します。</p></article>
+                <article><span class="nstm-b-assurance__question">設備に合うか不安</span><span class="nstm-b-assurance__icon">設</span><h3>仕様確認・<br>施工案内</h3><p>配管や規格などの使用条件を確認し、施工方法と必要な資料をご案内します。</p></article>
+                <article><span class="nstm-b-assurance__question">故障時の修理が不安</span><span class="nstm-b-assurance__icon">修</span><h3>保証・修理・<br>部品供給</h3><p>正規輸入品には製品ごとの保証期間を設け、修理と部品購入も受け付けています。</p></article>
+                <article><span class="nstm-b-assurance__question">国内で頼めるか不安</span><span class="nstm-b-assurance__icon">網</span><h3>全国<br>メンテナンス</h3><p>39都道府県64社のサービスパートナーと連携し、全国でメンテナンスに対応しています。</p></article>
               </div>
+            </div>
+          </section>
+
+          <section class="nstm-section nstm-stats nstm-b-evidence">
+            <div class="nstm-container">
+              <div class="nstm-a-evidence__title"><div><span>数字で見る国内対応体制</span><h2>国内で支えるための基盤</h2></div><p>会社情報と、現在公開しているメンテナンス体制を数字でご紹介します。</p></div>
+              <div class="nstm-stats__grid">
+                <?php foreach (array(
+                    array('会社設立', '2004', '年'),
+                    array('メンテナンス提携先', '64', '社'),
+                    array('メンテナンス網', '39', '都道府県'),
+                    array('正規輸入品の保証', '最大2', '年間'),
+                    array('品質・環境マネジメント', 'ISO', '9001 / 14001'),
+                ) as $item) : ?>
+                  <div class="nstm-stat"><span class="nstm-stat__label"><?php echo esc_html($item[0]); ?></span><span class="nstm-stat__value"><?php echo esc_html($item[1]); ?><small class="nstm-stat__unit"><?php echo esc_html($item[2]); ?></small></span></div>
+                <?php endforeach; ?>
+              </div>
+              <p class="nstm-provisional">※ メンテナンス網は2026年9月現在。保証期間は製品により異なります。</p>
             </div>
           </section>
 
@@ -172,43 +170,41 @@ function nstm_render_concept_page($variant = 'a') {
             </div>
           </section>
 
-          <section class="nstm-section nstm-projects nstm-b-projects" id="projects">
-            <div class="nstm-container">
-              <div class="nstm-section__head"><span class="nstm-section__number">プロジェクト対応</span><div><h2 class="nstm-section__heading">用途と工程に合わせ、<br>KOHLER製品の採用を<br>支援します。</h2></div></div>
-              <div class="nstm-projects__layout">
-                <article class="nstm-project-feature"><div class="nstm-project-feature__copy"><small>ホテル・レジデンス</small><h3>選定から納入まで、<br>案件別に対応します</h3><p>ご相談内容に応じて、空間の意匠、必要数量、工期、施工条件を確認し、採用に必要な情報を整理します。</p><small class="nstm-image-note">※ 写真はイメージです。</small></div></article>
-                <div class="nstm-project-list">
-                  <article class="nstm-project-card"><small>設計段階</small><strong>製品選定・仕様確認</strong><span>意匠、必要な機能、国内での使用条件を確認し、候補製品をご案内します。</span></article>
-                  <article class="nstm-project-card"><small>調達段階</small><strong>価格・納期の調整</strong><span>数量と希望納期を確認し、価格と納入時期を調整します。</span></article>
-                  <article class="nstm-project-card"><small>施工段階</small><strong>納まり・施工支援</strong><span>承認図や施工資料をご案内し、納まりと施工方法のご相談に対応します。</span></article>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="nstm-section nstm-process nstm-process--b" id="flow">
-            <div class="nstm-container">
-              <div class="nstm-process__head"><div><span>納入までの流れ</span><h2>KOHLER製品が<span class="nstm-sp-break"></span>日本の現場に届くまで</h2></div><p>輸入した製品は、国内で開梱・検品し、確認した内容を記録してから出荷します。</p></div>
-              <div class="nstm-process__grid">
-                <?php foreach (array(
-                    array('01', '日本へ輸入', 'cargo-port.webp'),
-                    array('02', '受入・開梱', 'warehouse-inspection.webp'),
-                    array('03', '検品・通水確認', 'inspection-caliper.webp'),
-                    array('04', '記録・注意事項の確認', 'technical-drawing.webp'),
-                    array('05', '出荷', 'warehouse-inspection.webp'),
-                ) as $item) : ?>
-                  <article class="nstm-process-card"><div><span><?php echo esc_html($item[0]); ?></span><h3><?php echo esc_html($item[1]); ?></h3></div><img src="<?php echo esc_url($image_uri . '/' . $item[2]); ?>" alt=""></article>
-                <?php endforeach; ?>
-              </div>
-              <p class="nstm-image-note">※ 写真はイメージです。</p>
-            </div>
-          </section>
-
           <section class="nstm-b-dual" id="support">
             <article><img src="<?php echo esc_url($image_uri . '/inspection-caliper.webp'); ?>" alt="部品の寸法確認イメージ"><div><span>正規輸入品への対応</span><h2>品質の約束</h2><p>国内で受入検品を行い、使用上の注意事項を記録します。保証、部品供給、修理のご相談にも対応します。</p></div></article>
             <article><div><span>ホテル・レジデンスなど</span><h2>プロジェクト<br>サポート</h2><p>ホテルやレジデンスなどの案件では、ご相談に応じて製品選定、価格・納期の調整、納まり検討、通水検証、施工支援が可能です。対応内容は案件ごとに調整します。</p></div><img src="<?php echo esc_url($image_uri . '/technical-drawing.webp'); ?>" alt="設計図面を確認するイメージ"></article>
           </section>
         <?php endif; ?>
+
+        <?php
+        $cases = array(
+            array('コードアーキテクツ様', 'キッチン', '2021.06.18', 'https://kohler-nst.jp/home-use/4'),
+            array('東京都練馬区 T様邸', '戸建住宅', '2020.07.24', 'https://kohler-nst.jp/home-use/3'),
+            array('東京都世田谷区 O様邸', '戸建住宅', '2020.07.23', 'https://kohler-nst.jp/home-use/2'),
+            array('滋賀県大津市 F様邸', '戸建住宅', '2020.07.22', 'https://kohler-nst.jp/home-use/1'),
+        );
+        ?>
+        <section class="nstm-section nstm-cases nstm-cases--<?php echo esc_attr($variant); ?>" id="projects">
+          <div class="nstm-container">
+            <?php if ($is_a) : ?>
+              <div class="nstm-section__head"><span class="nstm-section__number">公開中の事例</span><div><h2 class="nstm-section__heading">納入実績</h2><p class="nstm-section__intro">これまでに公開した4件の導入事例をご紹介します。</p></div></div>
+              <div class="nstm-cases__grid">
+                <?php foreach ($cases as $index => $case) : ?>
+                  <a class="nstm-case-card" href="<?php echo esc_url($case[3]); ?>" target="_blank" rel="noopener"><span class="nstm-case-card__index">0<?php echo esc_html($index + 1); ?></span><div><span><?php echo esc_html($case[1] . '／' . $case[2]); ?></span><h3><?php echo esc_html($case[0]); ?></h3></div><span class="nstm-case-card__link">導入事例を見る</span></a>
+                <?php endforeach; ?>
+              </div>
+            <?php else : ?>
+              <div class="nstm-cases__layout">
+                <article class="nstm-cases__feature"><div><span>公開中の事例</span><h2>納入実績</h2><p>これまでに公開した4件の導入事例をご紹介します。</p><small>※ 写真はイメージです。</small></div></article>
+                <div class="nstm-cases__list">
+                  <?php foreach ($cases as $case) : ?>
+                    <a class="nstm-case-row" href="<?php echo esc_url($case[3]); ?>" target="_blank" rel="noopener"><div><span><?php echo esc_html($case[1] . '／' . $case[2]); ?></span><h3><?php echo esc_html($case[0]); ?></h3></div><span>導入事例を見る</span></a>
+                  <?php endforeach; ?>
+                </div>
+              </div>
+            <?php endif; ?>
+          </div>
+        </section>
 
         <section class="nstm-section">
           <div class="nstm-container">
