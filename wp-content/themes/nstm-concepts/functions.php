@@ -32,7 +32,7 @@ function nstm_render_concept_page($variant = 'a') {
           <button class="nstm-menu-toggle" type="button" aria-expanded="false" aria-controls="nstm-nav"><span></span><span></span><span></span><span class="nstm-sr-only">メニューを開く</span></button>
           <nav class="nstm-nav" id="nstm-nav" aria-label="メインナビゲーション">
             <a href="#promise">国内での対応</a>
-            <a href="#flow">納入までの流れ</a>
+            <a href="#lab">国内ラボ・通水検証</a>
             <a href="#projects">プロジェクト対応</a>
             <a href="#company">会社情報</a>
             <a href="#contact">お問い合わせ</a>
@@ -47,7 +47,7 @@ function nstm_render_concept_page($variant = 'a') {
           <div class="nstm-hero__inner">
             <div class="nstm-hero__copy">
               <span class="nstm-kicker">KOHLER 日本正規輸入代理店</span>
-              <h1 class="nstm-hero__title">日本の現場に<br>届くまでが、<br>私たちの品質です。</h1>
+              <h1 class="nstm-hero__title">KOHLER製品の<br>輸入・検品から、<br>修理まで承ります。</h1>
               <p class="nstm-hero__lead">日鉄物産マテックス株式会社</p>
               <a class="nstm-button" href="#contact">プロジェクトについて相談する</a>
             </div>
@@ -106,6 +106,18 @@ function nstm_render_concept_page($variant = 'a') {
             </div>
           </section>
 
+          <section class="nstm-lab nstm-lab--a" id="lab">
+            <div class="nstm-container nstm-lab__inner">
+              <div class="nstm-lab__copy">
+                <span class="nstm-lab__badge">プロジェクトサポート｜案件限定</span>
+                <h2>国内ラボで、<br>通水検証を行います。</h2>
+                <p>ホテルやレジデンスなどのプロジェクトでは、ご相談に応じて国内ラボで通水検証を行うことが可能です。実施内容は、製品や案件の条件に合わせて個別に調整します。</p>
+                <div class="nstm-lab__facts"><span>対象：プロジェクト案件</span><span>実施：ご相談に応じて</span><span>内容：案件ごとに個別調整</span></div>
+                <small class="nstm-image-note">※ 写真はイメージです。</small>
+              </div>
+            </div>
+          </section>
+
           <section class="nstm-section nstm-process nstm-process--a" id="flow">
             <div class="nstm-container">
               <div class="nstm-process__head"><div><span>納入までの流れ</span><h2>KOHLER製品が<span class="nstm-sp-break"></span>日本の現場に届くまで</h2></div><p>輸入した製品は、国内で開梱・検品し、確認した内容を記録してから出荷します。</p></div>
@@ -131,7 +143,7 @@ function nstm_render_concept_page($variant = 'a') {
               <div><span>正規輸入品への対応</span><h2>品質の約束</h2><p>国内で受入検品を行い、使用上の注意事項を記録します。保証、部品供給、修理のご相談にも対応します。</p></div>
             </article>
             <article class="nstm-a-dual__panel nstm-a-dual__panel--project" id="projects">
-              <div><span>ホテル・レジデンスなど</span><h2>プロジェクト<br>サポート</h2><p>ホテルやレジデンスなどの案件では、製品選定、価格・納期の調整、納まり検討、通水確認、施工支援を行います。</p></div>
+              <div><span>ホテル・レジデンスなど</span><h2>プロジェクト<br>サポート</h2><p>ホテルやレジデンスなどの案件では、ご相談に応じて製品選定、価格・納期の調整、納まり検討、通水検証、施工支援が可能です。対応内容は案件ごとに調整します。</p></div>
             </article>
           </section>
         <?php else : ?>
@@ -147,11 +159,24 @@ function nstm_render_concept_page($variant = 'a') {
             </div>
           </section>
 
+          <section class="nstm-lab nstm-lab--b" id="lab">
+            <div class="nstm-container nstm-lab__inner">
+              <div class="nstm-lab__visual" role="img" aria-label="水栓の通水検証イメージ"><span>国内ラボ／通水検証</span></div>
+              <div class="nstm-lab__copy">
+                <span class="nstm-lab__badge">プロジェクトサポート｜案件限定</span>
+                <h2>国内ラボでの<br>通水検証も、<br>ご相談ください。</h2>
+                <p>ホテルやレジデンスなどの案件を対象に、ご相談に応じて実施します。検証する製品や内容は、案件の条件を確認したうえで個別に調整します。</p>
+                <dl class="nstm-lab__details"><div><dt>対象</dt><dd>プロジェクト案件</dd></div><div><dt>実施</dt><dd>ご相談に応じて</dd></div><div><dt>内容</dt><dd>案件ごとに個別調整</dd></div></dl>
+                <small class="nstm-image-note">※ 写真はイメージです。</small>
+              </div>
+            </div>
+          </section>
+
           <section class="nstm-section nstm-projects nstm-b-projects" id="projects">
             <div class="nstm-container">
               <div class="nstm-section__head"><span class="nstm-section__number">プロジェクト対応</span><div><h2 class="nstm-section__heading">用途と工程に合わせ、<br>KOHLER製品の採用を<br>支援します。</h2></div></div>
               <div class="nstm-projects__layout">
-                <article class="nstm-project-feature"><div class="nstm-project-feature__copy"><small>ホテル・レジデンス</small><h3>選定から納入まで、<br>案件別に対応します</h3><p>空間の意匠、必要数量、工期、施工条件を確認し、採用に必要な情報を整理します。</p><small class="nstm-image-note">※ 写真はイメージです。</small></div></article>
+                <article class="nstm-project-feature"><div class="nstm-project-feature__copy"><small>ホテル・レジデンス</small><h3>選定から納入まで、<br>案件別に対応します</h3><p>ご相談内容に応じて、空間の意匠、必要数量、工期、施工条件を確認し、採用に必要な情報を整理します。</p><small class="nstm-image-note">※ 写真はイメージです。</small></div></article>
                 <div class="nstm-project-list">
                   <article class="nstm-project-card"><small>設計段階</small><strong>製品選定・仕様確認</strong><span>意匠、必要な機能、国内での使用条件を確認し、候補製品をご案内します。</span></article>
                   <article class="nstm-project-card"><small>調達段階</small><strong>価格・納期の調整</strong><span>数量と希望納期を確認し、価格と納入時期を調整します。</span></article>
@@ -181,7 +206,7 @@ function nstm_render_concept_page($variant = 'a') {
 
           <section class="nstm-b-dual" id="support">
             <article><img src="<?php echo esc_url($image_uri . '/inspection-caliper.webp'); ?>" alt="部品の寸法確認イメージ"><div><span>正規輸入品への対応</span><h2>品質の約束</h2><p>国内で受入検品を行い、使用上の注意事項を記録します。保証、部品供給、修理のご相談にも対応します。</p></div></article>
-            <article><div><span>ホテル・レジデンスなど</span><h2>プロジェクト<br>サポート</h2><p>ホテルやレジデンスなどの案件では、製品選定、価格・納期の調整、納まり検討、通水確認、施工支援を行います。</p></div><img src="<?php echo esc_url($image_uri . '/technical-drawing.webp'); ?>" alt="設計図面を確認するイメージ"></article>
+            <article><div><span>ホテル・レジデンスなど</span><h2>プロジェクト<br>サポート</h2><p>ホテルやレジデンスなどの案件では、ご相談に応じて製品選定、価格・納期の調整、納まり検討、通水検証、施工支援が可能です。対応内容は案件ごとに調整します。</p></div><img src="<?php echo esc_url($image_uri . '/technical-drawing.webp'); ?>" alt="設計図面を確認するイメージ"></article>
           </section>
         <?php endif; ?>
 
