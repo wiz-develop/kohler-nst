@@ -21,3 +21,5 @@
 ## サーバー構成
 
 現行サイトとリニューアルサイトの切り替え計画は [docs/server-environment.md](docs/server-environment.md) を参照してください。
+
+リニューアルのA案・B案の方針は [docs/design-concepts.md](docs/design-concepts.md) を参照してください。
