@@ -3,7 +3,7 @@ Theme Name: NSTM Concepts
 Theme URI: https://github.com/wiz-develop/kohler-nst
 Author: wiz-develop
 Description: 日鉄物産マテックス KOHLERサイトのデザイン検討用テーマ。
-Version: 0.4.0
+Version: 0.4.1
 Text Domain: nstm-concepts
 */
 
@@ -43,9 +43,9 @@ button { font: inherit; }
   border-bottom: 1px solid rgba(255,255,255,.22);
 }
 .nstm-header__inner { width: min(calc(100% - 48px), 1440px); margin: auto; display: flex; align-items: center; gap: 32px; }
-.nstm-logo { display: inline-flex; align-items: center; gap: 12px; flex: 0 0 auto; }
-.nstm-logo__mark { font-family: Arial, sans-serif; font-size: 25px; font-weight: 800; letter-spacing: -.06em; }
-.nstm-logo__text { font-size: 10px; line-height: 1.45; letter-spacing: .02em; opacity: .84; }
+.nstm-logo { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 5px; flex: 0 0 auto; }
+.nstm-logo__wordmark { width: 128px; height: auto; filter: brightness(0) invert(1); }
+.nstm-logo__company { font-size: 9px; line-height: 1; letter-spacing: .02em; opacity: .78; }
 .nstm-nav { margin-left: auto; display: flex; align-items: center; gap: clamp(14px, 1.6vw, 28px); font-size: 12px; }
 .nstm-nav a { position: relative; white-space: nowrap; }
 .nstm-nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -9px; height: 1px; background: currentColor; transition: right .25s ease; }
@@ -264,6 +264,7 @@ button { font: inherit; }
 /* B: light editorial journal */
 .nstm--b { --paper: #fafafa; --line: #cfd5d6; --water: #234f5e; }
 .nstm--b .nstm-header { color: var(--ink); background: rgba(255,255,255,.92); border-bottom-color: var(--line); }
+.nstm--b .nstm-logo__wordmark { filter: none; }
 .nstm--b .nstm-nav__external { color: var(--white); background: var(--ink); }
 .nstm--b .nstm-hero { color: var(--ink); background-image: url("assets/images/hero-light.webp"); background-position: center; }
 .nstm--b .nstm-hero::before { background: linear-gradient(90deg, rgba(255,255,255,.98) 0%, rgba(255,255,255,.92) 34%, rgba(255,255,255,.12) 64%); }
@@ -338,7 +339,8 @@ button { font: inherit; }
   .nstm-container, .nstm-header__inner, .nstm-hero__inner { width: min(calc(100% - 32px), var(--max)); }
   .nstm-header { height: 72px; }
   .nstm-sp-break { display: block; }
-  .nstm-logo__text { display: none; }
+  .nstm-logo__wordmark { width: 100px; }
+  .nstm-logo__company { font-size: 8px; }
   .nstm-nav { top: 72px; }
   .nstm-hero { min-height: 690px; background-position: 62% center; }
   .nstm-hero::before, .nstm--b .nstm-hero::before { background: linear-gradient(180deg, rgba(0,0,0,.12), rgba(0,0,0,.88) 70%); }

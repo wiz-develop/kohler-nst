@@ -25,9 +25,9 @@ function nstm_render_concept_page($variant = 'a') {
     <div class="nstm-site nstm--<?php echo esc_attr($variant); ?>">
       <header class="nstm-header">
         <div class="nstm-header__inner">
-          <a class="nstm-logo" href="#top" aria-label="NSTM ページ先頭へ">
-            <span class="nstm-logo__mark">NSTM</span>
-            <span class="nstm-logo__text">日鉄物産マテックス株式会社<br>KOHLER 日本正規輸入代理店</span>
+          <a class="nstm-logo" href="#top" aria-label="KOHLER 日鉄物産マテックス株式会社 ページ先頭へ">
+            <img class="nstm-logo__wordmark" src="<?php echo esc_url($image_uri . '/kohler-logo.svg'); ?>" alt="KOHLER">
+            <span class="nstm-logo__company">日鉄物産マテックス株式会社</span>
           </a>
           <button class="nstm-menu-toggle" type="button" aria-expanded="false" aria-controls="nstm-nav"><span></span><span></span><span></span><span class="nstm-sr-only">メニューを開く</span></button>
           <nav class="nstm-nav" id="nstm-nav" aria-label="メインナビゲーション">
